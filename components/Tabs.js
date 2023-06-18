@@ -23,6 +23,7 @@ export default function Tabs({tabs,active,onChange}) {
         <StyledTab
           onClick={() => { onChange(tabName) }}
           active={tabName === active}
+          key={tabName.index}
         >{tabName}</StyledTab>
       ))}
     </StyledTabs>
